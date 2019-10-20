@@ -1,0 +1,30 @@
+.background {
+    -fx-background-image: url("/resources/images/scenes/fail.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.background-win {
+    -fx-background-image: url("/resources/images/scenes/home.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.score {
+    -fx-background-color: #4CAF50; /* Green */
+    -fx-border: none;
+    -fx-color: white;
+    -fx-padding: 15px 32px;
+    -fx-text-align: center;
+    -fx-text-decoration: none;
+    -fx-display: inline-block;
+    -fx-font-size: 16px;
+    -fx-margin: 4px 2px;
+    -fx-cursor: pointer;
+}
+.button1{
+
+}
+.button2{
+
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="resources.scenes.FailScene"
+            prefHeight="400.0" prefWidth="600.0">
+
+</AnchorPane>
+-->
+<?import java.net.URL?>
+<AnchorPane fx:id="anchorpane"
+            styleClass="background"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.harue.hangman.controller.ScoreController">
+    <VBox spacing="30"  alignment="CENTER" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="300">
+        <children>
+            <Label fx:id="score" mnemonicParsing="false" text="score" styleClass="score" />
+        </children>
+        <HBox spacing="30" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" alignment="CENTER">
+            <children>
+                <Button fx:id="home" onAction="#btnHomeClick" mnemonicParsing="false" text="home" styleClass="button1" />
+            </children>
+
+        </HBox>
+    </VBox>
+
+    <stylesheets>
+        <URL value="@/resources/css/fail.css"/>
+    </stylesheets>
+</AnchorPane>

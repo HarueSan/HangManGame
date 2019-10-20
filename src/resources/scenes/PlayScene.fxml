@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<?import java.net.URL?>
+<?import javafx.scene.text.Font?>
+<AnchorPane
+        fx:id="anchorpane"
+        styleClass="root"
+        xmlns="http://javafx.com/javafx/11.0.1"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.harue.hangman.controller.PlayController">
+   <children>
+      <VBox alignment="TOP_LEFT" AnchorPane.topAnchor="100" AnchorPane.leftAnchor="100" AnchorPane.bottomAnchor="100"
+            prefHeight="400.0" prefWidth="300.0" spacing="70">
+         <children>
+            <Label fx:id="textquest" alignment="TOP_LEFT" prefWidth="300.0" text="Label" textAlignment="LEFT">
+               <font>
+                  <Font size="25"></Font>
+               </font>
+            </Label>
+            <HBox alignment="TOP_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="30">
+               <children>
+                  <Button fx:id="button1" onAction="#checkAnswer" mnemonicParsing="false" text="Button" styleClass="text-box" />
+                  <Button fx:id="button2" onAction="#checkAnswer" mnemonicParsing="false" text="Button" styleClass="text-box" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="30">
+               <children>
+                  <Button fx:id="button3" onAction="#checkAnswer" mnemonicParsing="false" text="Button" styleClass="text-box" />
+                  <Button fx:id="button4" onAction="#checkAnswer" mnemonicParsing="false" text="Button" styleClass="text-box" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fx:id="manimg" fitHeight="400.0" fitWidth="300.0" AnchorPane.topAnchor="100" AnchorPane.rightAnchor="100" AnchorPane.bottomAnchor="100" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/resources/images/man/initial.PNG" />
+         </image>
+      </ImageView>
+   </children>
+
+   <stylesheets>
+      <URL value="@/resources/css/play.css"/>
+
+   </stylesheets>
+</AnchorPane>
